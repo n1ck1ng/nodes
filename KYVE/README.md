@@ -14,6 +14,10 @@
 //for example
 // scp /Users/a1/Downloads/arweave.json root@176.123.112.222/root/
 
+//установите wget
+
+    sudo apt-get install wget
+    
 //запустите скрипт, введя команду. 
 
     wget -q -O KYVE_protokol.sh https://github.com/n1ck1ng/nodes/blob/main/KYVE/KYVE_protokol.sh && chmod +x KYVE_protokol.sh && sudo /bin/bash KYVE_protokol.sh
