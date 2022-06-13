@@ -20,4 +20,4 @@
     
 //запустите скрипт, введя команду. 
 
-    wget -q -O KYVE_protokol.sh https://github.com/n1ck1ng/nodes/blob/main/KYVE/KYVE_protokol.sh && chmod +x KYVE_protokol.sh && sudo /bin/bash KYVE_protokol.sh
+    wget -q -O KYVE_protokol.sh https://raw.githubusercontent.com/n1ck1ng/nodes/main/KYVE/KYVE_protokol.sh && chmod +x KYVE_protokol.sh && sudo /bin/bash KYVE_protokol.sh
