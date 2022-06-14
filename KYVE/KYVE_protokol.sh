@@ -7,7 +7,7 @@ sudo apt-get update && \
 sudo apt-get upgrade -y
 
 if exists curl; then
-echo ''
+	echo ''
 else
   sudo apt update && sudo apt install curl -y < "/dev/null"
 fi
@@ -24,8 +24,9 @@ sleep 1 && \
 	bash && sleep 1
 
 if (! $POOL);then
-read -p "Enter POOL number: " POOL
-echo 'pool number ='\"${POOL}\" >> $HOME/.bash_profile
+	read -p "Enter POOL number: " POOL
+	echo 'pool number ='\"${POOL}\" >> $HOME/.bash_profile
+fi
 
 case $POOL in
 
