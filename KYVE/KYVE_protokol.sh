@@ -24,9 +24,9 @@ sleep 1 && \
 	bash && sleep 1
 
 
-read -p "Enter POOL number: " $POOL
+read -p "Enter POOL number: " POOL
 echo 'pool number ='\"${POOL}\" >> $HOME/.bash_profile
-$VER=v0.1.0
+VER=v0.1.0
 
 
 case $POOL in
