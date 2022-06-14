@@ -33,7 +33,7 @@ case $POOL in
 
 # THIS IS MOONBEAM
 	0)
-		$REP_NAME="evm" && $BIN="kyve-evm" && $NAME="moonbeam"
+		REP_NAME="evm" && BIN="kyve-evm" && NAME="moonbeam"
 		;;
 # THIS IS AVALANCHE
 	1)
