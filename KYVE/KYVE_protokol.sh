@@ -23,10 +23,10 @@ sleep 1 && \
 	curl -s https://raw.githubusercontent.com/n1ck1ng/files/main/logo.sh | \
 	bash && sleep 1
 
-if (! $POOL);then
-	read -p "Enter POOL number: " POOL
-	echo 'pool number ='\"${POOL}\" >> $HOME/.bash_profile
-fi
+
+read -p "Enter POOL number: " POOL
+echo 'pool number ='\"${POOL}\" >> $HOME/.bash_profile
+
 
 case $POOL in
 
