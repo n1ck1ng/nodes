@@ -96,7 +96,7 @@ case $POOL in
 		;;
 # THIS IS UMEE
 	16)
-		$REP_NAME="cosmos" && $BIN="kyve-cosmos" && $NAME="umee"
+		$REP_NAME=cosmos && $BIN=kyve-cosmos && $NAME=umee
 		;;
 esac
 
