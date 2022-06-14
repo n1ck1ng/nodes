@@ -24,7 +24,7 @@ sleep 1 && \
 	bash && sleep 1
 
 
-read -p "Enter POOL number: " POOL
+read -p "Enter POOL number: " $POOL
 echo 'pool number ='\"${POOL}\" >> $HOME/.bash_profile
 
 
@@ -115,13 +115,11 @@ Binaric: $BIN.\n\
 Binaric version: v $($BIN --version).\n\n"
 sleep 1
 
-if (! $SEED);then
-	read -p "Enter your SEED phrase: " SEED
-fi
 
-if (! $STAKE);then
-	read -p "Enter SELFSTAKE: " STAKE
-fi
+read -p "Enter your SEED phrase: " $SEED
+
+read -p "Enter SELFSTAKE: " $STAKE
+
 
 sudo tee <<EOF >/dev/null /etc/systemd/system/kyved.service
 [Unit]
