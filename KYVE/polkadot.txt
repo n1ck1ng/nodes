@@ -1,4 +1,0 @@
-    wget -q -O substrate.sh https://raw.githubusercontent.com/n1ck1ng/nodes/main/KYVE/substrate.sh && chmod +x substrate.sh && sudo /bin/bash substrate.sh
-    
-   
-   and write your mnemonic
