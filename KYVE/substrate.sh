@@ -1,14 +1,12 @@
 #!/bin/bash
 
+curl -s https://raw.githubusercontent.com/n1ck1ng/files/main/logo.sh | \
+	bash && sleep 1
+
 sudo apt-get update && \
 sudo apt-get upgrade -y
 
 sudo apt-get install wget unzip jq -y
-
-curl -s https://raw.githubusercontent.com/n1ck1ng/files/main/logo.sh | \
-	bash && sleep 1
-
-
 POOL=17 && REP_NAME="substrate" && BIN="kyve-substrate" && NAME="polkadot"
 
 VER=$(wget -qO- https://api.github.com/repos/kyve-org/${REP_NAME}/releases/latest | jq -r ".tag_name") && \
@@ -48,10 +46,10 @@ LimitNOFILE=10000
 WantedBy=multi-user.target
 EOF
 
-sleep1
+sleep 1
 sudo systemctl daemon-reload && \
 sudo systemctl enable kyved && \
 sudo systemctl restart kyved
 
-sleep2
+sleep 2
 sudo journalctl -u kyved -f -o cat
