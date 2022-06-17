@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 curl -s https://raw.githubusercontent.com/n1ck1ng/files/main/logo.sh | \
 	bash && sleep 1
 	
@@ -85,6 +85,7 @@ case $POOL in
 		REP_NAME="substrate" && BIN="kyve-substrate" && NAME="polkadot"
 		;;
 esac
+
 
 VER=$(wget -qO- https://api.github.com/repos/kyve-org/${REP_NAME}/releases/latest | jq -r ".tag_name") && \
 wget https://github.com/kyve-org/${REP_NAME}/releases/download/${VER}/kyve-linux.zip && \
