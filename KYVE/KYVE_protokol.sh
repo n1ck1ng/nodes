@@ -133,3 +133,4 @@ sudo systemctl enable kyved && \
 sudo systemctl restart kyved
 sleep 2
 sudo journalctl -u kyved -f -o cat
+#anyway merci romanov
