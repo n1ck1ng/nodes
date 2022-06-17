@@ -102,8 +102,8 @@ Binaric version: v $($BIN --version).\n\n"
 
 
 read -p "Enter your SEED phrase: " SEED
-
-read -p "Enter SELFSTAKE: " STAKE
+printf "\n"
+read -p "Enter SELFSTAKE:" STAKE
 
 
 sudo tee <<EOF >/dev/null /etc/systemd/system/kyved.service
