@@ -32,17 +32,16 @@
 
 // remove validator 
 
-sudo systemctl stop kyved && \
-sudo systemctl disable kyved &&\
-rm -Rvf /usr/bin/kyve* $HOME/kyve &&\
-sudo rm -v /etc/systemd/system/kyved.service && \
-sudo systemctl daemon-reload &&\
+    sudo systemctl stop kyved && sudo systemctl disable kyved && rm -Rvf /usr/bin/kyve* $HOME/kyve && sudo rm -v /etc/systemd/system/kyved.service && sudo systemctl daemon-reload
+
+
+ 
 
 // reload
 
-sudo systemctl restart kyved
+    sudo systemctl restart kyved
 
 // check logs
 
-sudo journalctl -u kyved -f -o cat
+    sudo journalctl -u kyved -f -o cat
 
