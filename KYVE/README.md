@@ -26,3 +26,23 @@
     wget -q -O KYVE_protokol.sh https://raw.githubusercontent.com/n1ck1ng/nodes/main/KYVE/KYVE_protokol.sh && chmod +x KYVE_protokol.sh && sudo /bin/bash KYVE_protokol.sh
     
 // введите запрашиваемые данные: номер пула, мнемонику и стейк. 
+
+
+
+
+// remove validator 
+
+sudo systemctl stop kyved && \
+sudo systemctl disable kyved &&\
+rm -Rvf /usr/bin/kyve* $HOME/kyve &&\
+sudo rm -v /etc/systemd/system/kyved.service && \
+sudo systemctl daemon-reload &&\
+
+// reload
+
+sudo systemctl restart kyved
+
+// check logs
+
+sudo journalctl -u kyved -f -o cat
+
