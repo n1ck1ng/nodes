@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 curl -s https://raw.githubusercontent.com/n1ck1ng/files/main/logo.sh | \
 	bash && sleep 1
 
@@ -22,7 +23,7 @@ echo "export STAKE=$STAKE" >> $HOME/.bash_profile
 
 source $HOME/.bash_profile
 
-git clone https://github.com/kyve-org/kysor.git
+git clone https://github.com/kyve-org/kysor
 cd $HOME/kysor
 
 
