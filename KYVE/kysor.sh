@@ -29,6 +29,9 @@ cd $HOME/kysor
 mkdir $HOME/kysor/secrets
 echo $SEED > $HOME/kysor/secrets/mnemonic.txt
 
+mv /root/arweave.json /root/kysor/secrets/arweave.json
+
+
 tee $HOME/kysor/kysor.conf.ts > /dev/null <<EOF
 import { IConfig } from "./src/faces";
 const config: IConfig = {
