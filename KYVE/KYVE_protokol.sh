@@ -84,6 +84,9 @@ case $POOL in
 	17)
 		REP_NAME="substrate" && BIN="kyve-substrate" && NAME="polkadot"
 		;;
+	18)
+		REP_NAME="substrate" && BIN="kyve-substrate" && NAME="kusama"
+		;;
 esac
 
 
