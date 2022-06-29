@@ -89,8 +89,11 @@ case $POOL in
 		;;
 esac
 
+read -p "Enter VER: " VER
+if [[${#VER} -lt 3]]; then
+	VER=$(wget -qO- https://api.github.com/repos/kyve-org/${REP_NAME}/releases/latest | jq -r ".tag_name") 
+fi
 
-VER=$(wget -qO- https://api.github.com/repos/kyve-org/${REP_NAME}/releases/latest | jq -r ".tag_name") && \
 wget https://github.com/kyve-org/${REP_NAME}/releases/download/${VER}/kyve-linux.zip && \
 unzip kyve-linux.zip && \
 rm -Rvf kyve-linux.zip __MACOSX && \
